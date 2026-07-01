@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.env/
+env/
+.venv/
+ENV/
+
+# Environment variables (secrets)
+.env
+
+# Streamlit config (if you have secrets)
+.streamlit/secrets.toml
+
+# LangChain databases / local cache
+.langchain/
+langchain.db
+
+# Vector DB storage
+# (Note: Currently NoteGo seems to use ChromaDB Cloud, 
+# but ignoring local SQlite files just in case)
+chroma_db/
+chroma.sqlite3
+faiss_index/
+
+# App specific data directories
+data/uploads/
+data/uploads_admin/
+data/uploads_student/
+data/images/
+data/images_admin/
+data/images_student/
+data/docstore/
+data/docstore_admin/
+data/docstore_student/
+data/processed_files_admin.json
+data/processed_files_student.json
+
+# If you want to keep the directory but ignore content:
+# data/uploads/*
+# !data/uploads/.gitkeep
+# data/images/*
+# !data/images/.gitkeep
+# data/docstore/*
+# !data/docstore/.gitkeep
+
+# Testing / coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+
+# IDEs / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Markdown / Documentation files
+*.md
+*.md.resolved
+
+.claude/
+
+upgrades.txt
+
+# Local data and workspace wrapper
+data/
+powershell.cmd

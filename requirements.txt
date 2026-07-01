@@ -1,0 +1,35 @@
+streamlit
+langchain
+langchain-community
+langchain-chroma
+chromadb
+PyMuPDF
+python-docx
+python-pptx
+ollama
+rank_bm25
+python-dotenv
+tomli>=1.1.0; python_version < "3.11"
+unstructured[docx,pptx]
+pdf2image
+pytesseract
+Pillow
+streamlit-pdf-viewer
+langchain-ollama
+
+# Phase 3 — Structured PDF parsing
+pymupdf4llm
+
+# Phase 4 — Semantic chunking + cross-encoder re-ranking
+langchain-experimental
+flashrank
+
+# Phase 5 — Semantic verification + Testing (Added during roadmap implementation)
+sentence-transformers
+pytest
+
+# --- External System Dependencies ---
+# Tesseract OCR is highly recommended for diagram text extraction accuracy!
+# On Windows, you MUST install the engine locally from:
+# https://github.com/UB-Mannheim/tesseract/wiki
+# And ensure it installs to: C:\Program Files\Tesseract-OCR\tesseract.exe

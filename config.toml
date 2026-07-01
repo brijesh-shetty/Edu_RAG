@@ -1,0 +1,31 @@
+[models]
+llm = "llama3.1:8b"
+embeddings = "mxbai-embed-large"
+vision = "llava:7b"
+llm_temperature = 0.1
+
+[retrieval]
+child_chunk_size = 400
+child_chunk_overlap = 100
+retriever_k = 5
+bm25_weight = 0.5
+vector_weight = 0.5
+reranker_top_n = 5
+
+[memory]
+max_token_limit = 800
+enabled = true
+
+[verification]
+enabled = true
+coverage_threshold = 0.8
+
+[quiz]
+default_num_questions = 3
+default_type = "mcq"
+
+[tesseract]
+# Leave blank to auto-detect (recommended on macOS/Linux).
+# On Windows set this explicitly if not in default location:
+# path = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+path = ""
